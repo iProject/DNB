@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">DNB</string>
+    <string name="Level_hundred">Level Hundred</string>
+    <string name="Level_two_hundred">Level Two Hundred</string>
+    <string name="Level_three_hundred">Level Three Hundred</string>
+    <string name="Level_four_hundred">Level Four hundred</string>
+    <string name="depart_update">Depart Update</string>
 </resources>
