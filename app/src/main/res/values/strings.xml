@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DNB</string>
+    <string name="title_activity_dnb_i_library">dnb_i_library</string>
 </resources>
