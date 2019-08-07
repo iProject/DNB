@@ -1,13 +1,13 @@
 package com.example.dnb;
 
 import android.os.Build;
-import android.os.Bundle;
 import android.support.annotation.RequiresApi;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import  android.support.v7.widget.Toolbar;
+import android.os.Bundle;
 import android.widget.TableLayout;
-
 
 import com.example.dnb.Adapters.DnbFragmentAdapter;
 
@@ -28,7 +28,7 @@ public class DnbFragmentActivity extends AppCompatActivity {
         //=================================================//
 
         ViewPager viewPager = findViewById( R.id.dnb_viewpager );
-        TableLayout tabLayout = (TableLayout) findViewById( R.id.dnb_tablayout );
+        TabLayout tabLayout = (TabLayout) findViewById( R.id.dnb_tablayout );
         Toolbar toolbar = findViewById( R.id.tool_bar);
 
         DnbFragmentAdapter gagilFragmentAdapter = new DnbFragmentAdapter( this, getSupportFragmentManager());
@@ -43,5 +43,6 @@ public class DnbFragmentActivity extends AppCompatActivity {
 
         toolbar.setTitle(getString(R.string.app_name));
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
+        tabLayout.setupWithViewPager( viewPager );
     }
 }
